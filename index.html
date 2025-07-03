@@ -4,17 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="">
-    <title>E-commerce</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>E-commerce - Home</title>
 </head>
 
 <body>
 
-    <!-- <header> -->
-        <h1>Tienda Muebles</h1>
+    <header>
+        <h1 class="nombre-sitio">Tienda <span>Muebles</span></h1>
     </header>
 
-    <nav>
+    <nav class="nav-principal">
         <a href="index.html">Inicio</a>
         <a href="nosotros.html">Nosotros</a>
         <a href="tienda.html">Tienda</a>
@@ -41,7 +42,7 @@
        
     </section>
 
-    <section>
+    <section class="sobre-nosotros">
         <div>
             <h2>Sobre Nosotros</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis aliquam ducimus nemo assumenda harum error animi libero voluptatem fuga recusandae. Aspernatur nihil molestias minima? Vero quis iste asperiores accusamus sequi!</p>
@@ -51,22 +52,118 @@
     <main>
         <h2>Nuestros Productos</h2>
 
-        <div>
-            <div>
+        <div> <!--Inicio de listado de productos-->
+            <div> <!--producto-->
                 <img 
                 src="img/producto1.jpg" 
                 alt="Imagen producto">
-                <div>
+                <div> <!--Info producto-->
                    <h3>Producto 1</h3>
                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti modi, unde nostrum culpa maiores eos ducimus perspiciatis aspernatur.</p> 
                    <p>$1,000</p>
                    <a href="#">Agregar al carrito</a>
-                </div>
-            </div>
-        </div>
+                </div> <!--Info producto-->
+            </div> <!--producto-->
+
+            <div> <!--producto-->
+                <img 
+                src="img/producto2.jpg" 
+                alt="Imagen producto">
+                <div> <!--Info producto-->
+                   <h3>Producto 2</h3>
+                   <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti modi, unde nostrum culpa maiores eos ducimus perspiciatis aspernatur.</p> 
+                   <p>$1,000</p>
+                   <a href="#">Agregar al carrito</a>
+                </div> <!--Info producto-->
+            </div> <!--producto-->
+
+            <div> <!--producto-->
+                <img 
+                src="img/producto3.jpg" 
+                alt="Imagen producto">
+                <div> <!--Info producto-->
+                   <h3>Producto 3</h3>
+                   <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti modi, unde nostrum culpa maiores eos ducimus perspiciatis aspernatur.</p> 
+                   <p>$1,000</p>
+                   <a href="#">Agregar al carrito</a>
+                </div> <!--Info producto-->
+            </div> <!--producto-->
+
+            <div> <!--producto-->
+                <img 
+                src="img/producto4.jpg" 
+                alt="Imagen producto">
+                <div> <!--Info producto-->
+                   <h3>Producto 4</h3>
+                   <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti modi, unde nostrum culpa maiores eos ducimus perspiciatis aspernatur.</p> 
+                   <p>$1,000</p>
+                   <a href="#">Agregar al carrito</a>
+                </div> <!--Info producto-->
+            </div> <!--producto-->
+
+            <div> <!--producto-->
+                <img 
+                src="img/producto5.jpg" 
+                alt="Imagen producto">
+                <div> <!--Info producto-->
+                   <h3>Producto 5</h3>
+                   <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti modi, unde nostrum culpa maiores eos ducimus perspiciatis aspernatur.</p> 
+                   <p>$1,000</p>
+                   <a href="#">Agregar al carrito</a>
+                </div> <!--Info producto-->
+            </div> <!--producto-->
+
+            <div> <!--producto-->
+                <img 
+                src="img/producto6.jpg" 
+                alt="Imagen producto">
+                <div> <!--Info producto-->
+                   <h3>Producto 6</h3>
+                   <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti modi, unde nostrum culpa maiores eos ducimus perspiciatis aspernatur.</p> 
+                   <p>$1,000</p>
+                   <a href="#">Agregar al carrito</a>
+                </div> <!--Info producto-->
+            </div> <!--producto-->
+
+        </div> <!--Fin de listado de productos-->
     </main>
 
     <footer>
+
+        <div>
+            <h3>Categorias</h3>
+
+            <nav>
+                <a href="#">Cocina</a>
+                <a href="#">Oficina</a>
+                <a href="#">Jardin</a>
+                <a href="#">Cochera</a> 
+                <a href="#">Dormitorios</a>
+            </nav>
+        </div>
+
+        <div>
+            <h3>Sobre Nosotros</h3>
+            
+            <nav>
+                <a href="#">Nuestra Historia</a>
+                <a href="#">Mision, Vision y Valores</a>
+                <a href="#">Carreras</a>
+                <a href="#">Politica de Privacidad</a> 
+                <a href="#">Terminos del servicio</a>
+            </nav>
+        </div>
+
+        <div>
+            <h3>Soporte</h3>
+            
+            <nav>
+                <a href="#">Preguntas Frecuentes</a>
+                <a href="#">Ayuda en linea</a>
+                <a href="#">Confianza y Seguridad</a>                
+            </nav>
+        </div>
+
         <p>Todos los derechos reservados E-commerce</p>
     </footer>
 </body>
