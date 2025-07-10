@@ -9,7 +9,6 @@ html {
 body {
     font-family: "Raleway", sans-serif;
     font-size: 1.6rem;
-    line-height: 2;
 }
 
 /**  Globales **/
@@ -56,6 +55,7 @@ img {
     font-weight: 900;
     padding: 1rem;
     transition: background-color .3s ease-out;
+    text-align: center;
 }
 
 .btn:hover {
@@ -66,6 +66,10 @@ img {
 
 .text-center {
     text-align: center;
+}
+
+.max-width-30 {
+    max-width: 30rem ;
 }
 
 /** Header y Navegacion  **/
@@ -155,6 +159,11 @@ img {
     padding-top: 5rem;
 }
 
+.contenido-principal p,
+.footer-menu a {
+    line-height: 2;
+}
+
 .listado-productos {
    display: grid;
    grid-template-columns: repeat(6, 1fr); 
@@ -168,6 +177,7 @@ img {
 }
 
 .producto:nth-child(1) img {
+    min-height: 100%;
     height: 43rem;
     width: 100%;
     object-fit: cover;
@@ -177,8 +187,20 @@ img {
     grid-column: 1 / 4;
 }
 
+.producto:nth-child(2) img {
+    height: 30rem;
+    width: 100%;
+    object-fit: cover;
+}
+
 .producto:nth-child(3) {
     grid-column: 4 / 7;
+}
+
+.producto:nth-child(3) img {
+    height: 30rem;
+    width: 100%;
+    object-fit: cover;
 }
 
 .producto:nth-child(4) {
@@ -215,6 +237,107 @@ img {
     font-size: 2.8rem;
     font-weight: 900;
 }
+
+/* Footer */
+
+.site-footer {
+    border-top: 1px solid #e1e1e1;
+    margin-top: 5rem;
+    padding-top: 5rem;
+}
+
+.site-footer h3 {
+    margin-bottom: .5rem;
+}
+
+.grid-footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.footer-menu a {
+    display: block;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 5rem;
+}
+
+
+/* Pagina nosotros */
+
+.contenido-nosotros {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 4rem;
+}
+
+.info-nosotros {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Blog */
+
+.contenedor-blog {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 4rem;
+    line-height: 2;
+}
+
+.entrada {
+    border-bottom: 2px solid #e1e1e1;
+    padding-bottom: 4rem;
+    margin-bottom: 2rem;
+}
+
+.entrada:last-of-type {
+    border: none;
+}
+
+.entrada-meta {
+    display: flex;
+    justify-content: space-between;
+}
+
+.entrada-meta p {
+    font-weight: 700;
+}
+
+.entrada-meta span {
+    color: #037bc0;
+}
+
+.contenido-entrada-blog {
+    width: 60rem;
+    margin: 0 auto;
+}
+
+/* Galeria */
+
+.galeria {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+
+}
+
+.galeria img {
+    height: 40rem;
+    width: 40rem;
+    object-fit: cover;
+}
+
+
+
+
 
 
 
